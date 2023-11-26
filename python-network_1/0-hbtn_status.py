@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-Fetches https://alu-intranet.hbtn.io/status
+Fetches http://0.0.0.0:5050/status
 """
 
 import urllib.request
 
-url = 'https://alu-intranet.hbtn.io/status'
+url = 'http://0.0.0.0:5050/status'
 
 with urllib.request.urlopen(url) as response:
     content = response.read()
